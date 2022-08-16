@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .list-item-primary {
+        @apply hover:text-cyan-700 uppercase px-1 transition ease-in-out duration-200;
+    }
+
+    .btn-primary {
+        @apply hover:bg-cyan-600 transition ease-in-out duration-200 
+                border-none px-5 py-2 mr-[10px] bg-cyan-700 text-white 
+                text-lg font-bold rounded-2xl;
+    }
+    .cake-header{
+        @apply text-yellow-700 text-xl;
+    }
+    .heart{
+        @apply hover:text-red-600 bg-yellow-600 text-white text-[17px] border border-yellow-600 
+        rounded-full px-2 py-1 absolute top-0 right-0 mt-2 mr-2 transition-colors;
+    }
+}
